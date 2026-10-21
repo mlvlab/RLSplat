@@ -1,0 +1,21 @@
+
+
+mode: test
+dataset:
+  re10k:
+    input_image_shape: [256, 256]
+    context_upscale_shape: [504, 504]
+    target_image_shape: [256, 256]
+test:
+  output_path: analysis_outputs/evaluation
+  align_pose: true
+  pose_align_steps: 100
+  rot_opt_lr: 0.005
+  trans_opt_lr: 0.005
+  compute_scores: true
+  save_image: false
+  gaussian_budget_sweep: true
+  gaussian_budget_per_view_list: [1024, 2048, 4096, 8192, 16384]
+wandb:
+  name: rlsplat_re10k_evaluation
+  mode: disabled

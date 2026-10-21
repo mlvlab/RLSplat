@@ -1,0 +1,35 @@
+defaults:
+- dataset@dataset.re10k: re10k
+- model/encoder: rlsplat
+- model/decoder: splatting_cuda
+- loss:
+  - mse
+  - lpips
+- _self_
+wandb:
+  name: rlsplat_evaluation
+  mode: disabled
+mode: test
+data_loader:
+  test:
+    num_workers: 4
+    persistent_workers: false
+    batch_size: 1
+    seed: 2345
+checkpointing:
+  load: null
+test:
+  output_path: analysis_outputs/evaluation
+  align_pose: true
+  pose_align_steps: 100
+  rot_opt_lr: 0.005
+  trans_opt_lr: 0.005
+  compute_scores: true
+  save_image: false
+  gaussian_budget_per_batch: null
+  gaussian_budget_sweep: false
+  gaussian_budget_per_view_list: null
+seed: 111123
+hydra:
+  run:
+    dir: analysis_outputs/evaluation/configs/${wandb.name}/${now:%Y-%m-%d_%H-%M-%S}

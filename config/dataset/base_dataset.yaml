@@ -1,0 +1,12 @@
+make_baseline_1: true
+relative_pose: true
+background_color:
+- 0.0
+- 0.0
+- 0.0
+overfit_to_scene: null
+skip_bad_shape: true
+target_image_shape:
+- 256
+- 256
+context_upscale_shape: null

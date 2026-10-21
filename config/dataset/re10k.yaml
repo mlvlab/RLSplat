@@ -1,0 +1,16 @@
+defaults:
+- base_dataset
+- view_sampler: evaluation
+name: re10k
+roots:
+- datasets/re10k
+input_image_shape:
+- 252
+- 252
+original_image_shape:
+- 360
+- 640
+cameras_are_circular: false
+baseline_min: 1e-3
+baseline_max: 1e10
+max_fov: 100.0

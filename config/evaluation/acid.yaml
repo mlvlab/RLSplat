@@ -1,0 +1,13 @@
+
+defaults:
+  - re10k
+  - _self_
+
+wandb:
+  name: rlsplat_acid_evaluation
+
+dataset:
+  re10k:
+    roots: [datasets/acid]
+    view_sampler:
+      index_path: assets/evaluation_index_acid.json

@@ -1,0 +1,26 @@
+defaults:
+  - backbone: dvlt
+
+name: rlsplat
+camera_mode: predicted
+
+gaussian_adapter:
+  sh_degree: 0
+  clamping: -1.0
+
+max_gaussians_per_anchor: 128
+max_gaussian_budget_per_view: 16384
+min_gaussian_budget_total: 2048
+gaussian_allocation_budget_conditioning: true
+gaussian_allocation_remainder_jitter: true
+
+position_topk_anchor_count: 16
+position_topk_residual_scale: 0.1
+position_topk_anchor_attention: true
+position_topk_anchor_attention_first: false
+position_topk_geometry_ffn: false
+position_topk_geometry_attention: true
+position_topk_anchor_include_self: true
+position_topk_geometry_anchor_count: 16
+position_topk_geometry_neighbor_count: 16
+position_topk_geometry_include_self: true
