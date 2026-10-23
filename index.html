@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f6">
+    <meta name="description" content="RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting">
+    <title>RLSplat</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #202522;
+        --muted: #66716a;
+        --green: #315f4b;
+        --paper: #f8f8f6;
+        --line: #dfe5df;
+      }
+      * { box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px 20px;
+        background: radial-gradient(ellipse at 50% 0%, #e8eee8 0, var(--paper) 58%);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main { width: min(760px, 100%); text-align: center; }
+      .mark {
+        display: inline-grid;
+        width: 54px;
+        height: 54px;
+        place-items: center;
+        margin-bottom: 24px;
+        border: 1px solid #c8d5cb;
+        border-radius: 18px;
+        background: #edf3ed;
+        color: var(--green);
+        font-size: 25px;
+        font-weight: 700;
+      }
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+      }
+      h1 { margin: 0; font-size: clamp(48px, 9vw, 76px); letter-spacing: -.065em; line-height: 1; }
+      .subtitle {
+        max-width: 650px;
+        margin: 23px auto 0;
+        color: #46514a;
+        font-size: clamp(18px, 3vw, 23px);
+        line-height: 1.5;
+        text-wrap: balance;
+      }
+      .authors { margin: 18px 0 0; color: var(--muted); font-size: 15px; line-height: 1.8; }
+      .rule { width: 52px; height: 1px; margin: 34px auto; background: #b8c5ba; }
+      .notice {
+        display: inline-block;
+        padding: 17px 24px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgb(255 255 255 / 68%);
+        color: #526058;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+      .links a {
+        min-width: 132px;
+        padding: 12px 18px;
+        border: 1px solid #cbd5cc;
+        border-radius: 999px;
+        color: var(--ink);
+        font-size: 14px;
+        font-weight: 650;
+        text-decoration: none;
+        transition: background .15s ease, border-color .15s ease, transform .15s ease;
+      }
+      .links a:first-child { border-color: var(--green); background: var(--green); color: white; }
+      .links a:hover { transform: translateY(-1px); border-color: var(--green); background: #edf3ed; color: var(--green); }
+      .links a:first-child:hover { background: #274c3b; color: white; }
+      footer { margin-top: 54px; color: #89928b; font-size: 12px; }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-hidden="true">R</div>
+      <p class="eyebrow">Feed-forward 3D Gaussian Splatting</p>
+      <h1>RLSplat</h1>
+      <p class="subtitle">Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting</p>
+      <p class="authors">Injae Kim · Minseok Joo · Jihwan Park · Sehyung Kim · Minseong Bae · Hyunwoo J. Kim</p>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="notice">Project page coming soon.<br>More details and materials will be available here shortly.</div>
+      <nav class="links" aria-label="Project links">
+        <a href="https://arxiv.org/abs/2610.27712">Read the paper ↗</a>
+        <a href="https://github.com/mlvlab/RLSplat">View the code ↗</a>
+      </nav>
+      <footer>© RLSplat</footer>
+    </main>
+  </body>
+</html>
