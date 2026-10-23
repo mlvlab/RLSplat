@@ -3,7 +3,7 @@
 RLSplat reconstructs a 3D Gaussian scene from a sparse set of uncalibrated images and renders novel views. This repository provides evaluation and inference code for the released checkpoint. Gaussian rendering uses [gsplat](https://github.com/nerfstudio-project/gsplat).
 
 <p align="center">
-  <a href="https://github.com/mlvlab/RLSplat"><img src="https://img.shields.io/badge/Project%20Page-RLSplat-2b6cb0?style=for-the-badge&logo=github" alt="Project Page"></a>
+  <a href="https://mlvlab.github.io/RLSplat/"><img src="https://img.shields.io/badge/Project%20Page-RLSplat-2b6cb0?style=for-the-badge&logo=github" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2610.27712"><img src="https://img.shields.io/badge/Paper-arXiv%3A2610.27712-b31b1b?style=for-the-badge" alt="Paper: arXiv 2610.27712"></a>
 </p>
 
